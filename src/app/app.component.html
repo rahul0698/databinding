@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+    <nav>
+        <a [routerLink]="[ 'contacts' ]">Contacts</a>
+        <a [routerLink]="['new-contacts']">New Contacts</a>
+    </nav>
+</header>
+<div id="container">
+    <router-outlet></router-outlet>
+</div>
